@@ -2,8 +2,7 @@ backend:
   name: github
   repo: <% GITHUB_REPOSITORY %> # Gulp will replace this with your GitHub repository
   branch: master # Branch to update (master by default)
-    display_url: https://example.com
-    media_folder: "content/posts"
+     media_folder: "content/posts"
     
     publish_mode: editorial_workflow # optional, enables publishing workflow
     
