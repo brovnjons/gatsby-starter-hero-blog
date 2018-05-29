@@ -2,10 +2,11 @@ backend:
   name: github
   repo: <% GITHUB_REPOSITORY %> # Gulp will replace this with your GitHub repository
   branch: master # Branch to update (master by default)
-     media_folder: "content/posts"
+    
     
     publish_mode: editorial_workflow # optional, enables publishing workflow
-    
+    media_folder: "/content/posts"
+    public_folder: "/static" # The src attribute for uploaded media will begin with /images/uploads
     collections: # A list of collections the CMS should be able to edit
   - name: "posts" # Used in routes, ie.: /admin/collections/:slug/edit
     label: "Posts" # Used in the UI
