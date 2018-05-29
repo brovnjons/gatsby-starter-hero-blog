@@ -1,9 +1,7 @@
 backend:
-  name: git-gateway
-  accept_roles: #optional - accepts all users if left out
-    - admin
-    - editor
-    repo: brovnjons/gatsby-starter-hero-blog
+  name: github
+  repo: <% GITHUB_REPOSITORY %> # Gulp will replace this with your GitHub repository
+  branch: master # Branch to update (master by default)
     display_url: https://example.com
     media_folder: "content/posts"
     
