@@ -10,11 +10,9 @@ public_folder: "static/img/" # The src attribute for uploaded media will begin w
 
     
 
-
-    collections: # A list of collections the CMS should be able to edit
+collections: 
   - name: "posts" # Used in routes, ie.: /admin/collections/:slug/edit
     label: "Posts" # Used in the UI
-    label_singular: "Post" # Used in the UI, ie: "New Post"
     folder: "content/posts"
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     create: true # Allow users to create new documents in this collection
